@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dispensary Name Generator</title>
+    <script type="text/javascript">
+        function generateName() {
+            var listA = ["Green", "Canna", "Releaf", "Farm", "Main Street", "Terp", "Cloud", "Puff", "420", "Blaze", "Bud", "Grass", "Smoke", "Fog", "Burn", "High", "Herb'n", "Grass", "Higher", "Rolling", "Loud", "Rollin"];
+            var listB = ["Door", "Provisions", "Wellness", "House", "Casa", "Grass", "Runtz", "Exotix", "Treez", "Barn", "Hut", "Haus", "Bliss", "Joy", "Shoppe", "Grade", "Burn", "Ember"];
+
+            var randomWordA = listA[Math.floor(Math.random() * listA.length)];
+            var randomWordB = listB[Math.floor(Math.random() * listB.length)];
+
+            document.getElementById("nameDisplay").innerHTML = randomWordA + " " + randomWordB;
+        }
+    </script>
+</head>
+<body>
+    <h1>Dispensary Name Generator</h1>
+    <button onclick="generateName()">Generate Name</button>
+    <p id="nameDisplay"></p>
+</body>
+</html>
